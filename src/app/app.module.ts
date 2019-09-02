@@ -6,9 +6,6 @@ import { RouterModule, Routes } from "@angular/router";
 import { DashboardModule } from "./dashboard/dashboard.module";
 import { LayoutModule } from "./layout/layout.module";
 
-import { AgGridModule } from "ag-grid-angular";
-// import { CarExampleModule } from './grid/car-example/car-example.module';
-import { CarExampleComponent } from "./grid/car-example/car-example.component";
 const routes: Routes = [
   {
     path: "",
@@ -18,14 +15,12 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  declarations: [AppComponent, CarExampleComponent],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
     RouterModule.forRoot(routes),
     LayoutModule,
-    DashboardModule,
-    AgGridModule.withComponents([CarExampleComponent])
-    // ,CarExampleModule
+    DashboardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
