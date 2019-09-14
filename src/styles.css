@@ -6,3 +6,11 @@ body {
 }
 @import "ag-grid-community/dist/styles/ag-grid.css";
 @import "ag-grid-community/dist/styles/ag-theme-balham.css";
+
+.svg {
+	height: auto;
+}
+.svg:hover {
+	cursor: pointer;
+	filter: invert(.5) sepia(1) saturate(5) hue-rotate(175deg);
+}
